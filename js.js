@@ -44,3 +44,13 @@ function addToCart(name, price) {
 }
 
 
+function deleteFromCart(index) {
+    Items.splice(index, 1);
+    updateCartDisplay();
+}
+
+function updateQuantity(index, quantity) {
+    Items[index].quantity = quantity;
+    updateCartDisplay();
+}
+
