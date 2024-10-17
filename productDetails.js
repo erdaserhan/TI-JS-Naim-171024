@@ -41,8 +41,7 @@ function afficherDetailProduit(product) {
             <h4>${product.description}</h4>
             <p>Price: ${product.price}</p>
             <p>Quantity: ${product.quantity}</p>
-            <button type="submit"><a href="./" class="text-primary">Return Homepage</a></button><br>
-            <button onclick="addToCart('${product.name}', ${product.price})">Add to Cart</button>
+            <button type="submit"><a href="./" class="text-primary">Return Homepage</a></button>
         </div>
     `;
     findDiv.appendChild(newElement)

@@ -9,7 +9,7 @@ fetch('products.json')
                 <img src="${product.image}">
                 <h3>${product.name}</h3>
                 <h4>${product.description}<h4>
-                <p>${product.price}</p>
+                <p>Price : €${product.price}</p>
                 <p>Quantity : ${product.quantity}</p>
                 <button onclick="window.location.href='productDetails.html?id=${product.id}'">Product Detail</button>
                 <button onclick="addToCart('${product.name}', ${product.price})"">Add to Cart</button>
@@ -56,7 +56,7 @@ function checkout() {
     Items.forEach(item => {
         totalPrice += item.price * item.quantity;
     });
-    window.location.pathname = "/form.html";
+   // window.location.pathname = "/form.html";
 }
 
 
@@ -68,7 +68,7 @@ function updateCartDisplay() {
         const li = document.createElement('li');
         li.className = 'cart-item';
         li.innerHTML = `
-            <span>${item.name} - ${(item.price*item.quantity).toFixed(2)}
+            <span>${item.name} - €${(item.price*item.quantity).toFixed(2)}
             <div class="quantity">
                 <button onclick="updateQuantity(${index},${item.quantity - 1})">-</button>
                 <input type="number" value="${item.quantity}" min="0" max="10" onchange="updateQuantity(${index}, this.value)">
@@ -80,7 +80,7 @@ function updateCartDisplay() {
         let totalPrice = 0;
         Items.forEach(item => {
         totalPrice += item.price * item.quantity;
-        cartElementTotal.innerHTML = `<strong>Total<strong> : ${totalPrice.toFixed(2)}`
+        cartElementTotal.innerHTML = `<strong>Total<strong> : €${totalPrice.toFixed(2)}`
     });
         cartElement.appendChild(li);        
     });
