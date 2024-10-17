@@ -11,7 +11,8 @@ fetch('products.json')
                 <h4>${product.description}<h4>
                 <p>${product.price}</p>
                 <p>Quantity : ${product.quantity}</p>
-                <button onclick="addToCart('${product.name}', ${product.price})">Add to Cart</button>
+                <button onclick="window.location.href='productDetails.html?id=${product.id}'">Product Detail</button>
+                <button onclick="addToCart('${product.name}', ${product.price})"">Add to Cart</button>
             </div>
         `
         findDiv.appendChild(newElement)
@@ -58,23 +59,6 @@ function checkout() {
     window.location.pathname = "/form.html";
 }
 
-/*
-function confirmCarte() {
-const modalPage = document.getElementById('myModal');
-Items.forEach((item, index) => {
-    const li = document.createElement('li');
-    li.innerHTML = `
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <span>${item.name} - ${(item.price*item.quantity).toFixed(2)}
-        </div>
-        
-        <button onclick="deleteFromCart(${index})">Confirm</button>
-    `;
-    modalPage.appendChild(li);        
-});
-}
-*/
 
 function updateCartDisplay() {
     const cartElement = document.getElementById('cart-items');
@@ -96,7 +80,7 @@ function updateCartDisplay() {
         let totalPrice = 0;
         Items.forEach(item => {
         totalPrice += item.price * item.quantity;
-        cartElementTotal.innerHTML = `Total : ${totalPrice.toFixed(2)}`
+        cartElementTotal.innerHTML = `<strong>Total<strong> : ${totalPrice.toFixed(2)}`
     });
         cartElement.appendChild(li);        
     });

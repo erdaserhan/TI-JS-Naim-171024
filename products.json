@@ -6,7 +6,7 @@
         "description": "Un smartphone haut de gamme avec 128 Go de stockage et 6 Go de RAM.",
         "price": 799.99,
         "quantity": 15,
-        "image": "https://img.freepik.com/premium-vector/realistic-vector-mockup-phone-visual-ui-app-demonstration_88272-10459.jpg?semt=ais_hybrid"
+        "image": "https://www.costco.co.uk/medias/sys_master/images/hb0/h30/175083385323550.jpg"
       },
       {
         "id": 2,
@@ -14,7 +14,7 @@
         "description": "Ordinateur portable ultra-fin avec écran 15 pouces et processeur i7.",
         "price": 1200.50,
         "quantity": 8,
-        "image": "https://img.freepik.com/premium-vector/realistic-vector-mockup-phone-visual-ui-app-demonstration_88272-10459.jpg?semt=ais_hybrid"
+        "image": "https://static.fnac-static.com/multimedia/Images/FR/MDM/d1/4d/52/22171089/1520-1/tsp20240914104729/PC-Portable-Microsoft-Surface-Laptop-Go-3-12-4-Ecran-tactile-Intel-Core-i5-16-Go-RAM-256-Go-D-Bleu-Glacier.jpg"
       },
       {
         "id": 3,
@@ -22,7 +22,7 @@
         "description": "Casque sans fil avec réduction active du bruit.",
         "price": 199.99,
         "quantity": 25,
-        "image": "https://img.freepik.com/premium-vector/realistic-vector-mockup-phone-visual-ui-app-demonstration_88272-10459.jpg?semt=ais_hybrid"
+        "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_79792390/fee_786_587_png"
       },
       {
         "id": 4,
@@ -30,7 +30,7 @@
         "description": "Montre connectée avec suivi de l'activité et capteur de fréquence cardiaque.",
         "price": 299.00,
         "quantity": 30,
-        "image": "https://img.freepik.com/premium-vector/realistic-vector-mockup-phone-visual-ui-app-demonstration_88272-10459.jpg?semt=ais_hybrid"
+        "image": "https://m.media-amazon.com/images/I/41idydLZbtL._AC_.jpg"
       },
       {
         "id": 5,
@@ -38,7 +38,7 @@
         "description": "Enceinte Bluetooth résistante à l'eau avec 10 heures d'autonomie.",
         "price": 99.90,
         "quantity": 50,
-        "image": "https://img.freepik.com/premium-vector/realistic-vector-mockup-phone-visual-ui-app-demonstration_88272-10459.jpg?semt=ais_hybrid"
+        "image": "https://sony.scene7.com/is/image/sonyglobalsolutions/SRS-LS1-Primary_image_LightGray?$primaryshotPreset$&fmt=png-alpha"
       }
     ]
   }
