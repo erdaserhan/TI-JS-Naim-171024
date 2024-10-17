@@ -1,5 +1,3 @@
-
-
 fetch('products.json')
 .then(response => response.json())
 .then((data) => {
@@ -23,7 +21,6 @@ fetch('products.json')
 
 let Items = [];
 
-console.log(Items);
 
 function addToCart(name, price) {
     const index = Items.findIndex(item => item.name === name);
@@ -58,13 +55,28 @@ function checkout() {
     Items.forEach(item => {
         totalPrice += item.price * item.quantity;
     });
-    window.location.pathname = "/form.html"
+    window.location.pathname = "/form.html";
 }
 
-function updateCartDisplay() {
-    let retString = localStorage.getItem("quantity");
-    let retArray = JSON.parse(retString)
+/*
+function confirmCarte() {
+const modalPage = document.getElementById('myModal');
+Items.forEach((item, index) => {
+    const li = document.createElement('li');
+    li.innerHTML = `
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <span>${item.name} - ${(item.price*item.quantity).toFixed(2)}
+        </div>
+        
+        <button onclick="deleteFromCart(${index})">Confirm</button>
+    `;
+    modalPage.appendChild(li);        
+});
+}
+*/
 
+function updateCartDisplay() {
     const cartElement = document.getElementById('cart-items');
     const cartElementTotal = document.getElementById('cart-items-total');
     cartElement.innerHTML = '';
