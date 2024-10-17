@@ -1,0 +1,45 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Smartphone XYZ",
+        "description": "Un smartphone haut de gamme avec 128 Go de stockage et 6 Go de RAM.",
+        "price": 799.99,
+        "quantity": 15,
+        "image": "https://img.freepik.com/premium-vector/realistic-vector-mockup-phone-visual-ui-app-demonstration_88272-10459.jpg?semt=ais_hybrid"
+      },
+      {
+        "id": 2,
+        "name": "Laptop ABC",
+        "description": "Ordinateur portable ultra-fin avec écran 15 pouces et processeur i7.",
+        "price": 1200.50,
+        "quantity": 8,
+        "image": "https://img.freepik.com/premium-vector/realistic-vector-mockup-phone-visual-ui-app-demonstration_88272-10459.jpg?semt=ais_hybrid"
+      },
+      {
+        "id": 3,
+        "name": "Casque Bluetooth",
+        "description": "Casque sans fil avec réduction active du bruit.",
+        "price": 199.99,
+        "quantity": 25,
+        "image": "https://img.freepik.com/premium-vector/realistic-vector-mockup-phone-visual-ui-app-demonstration_88272-10459.jpg?semt=ais_hybrid"
+      },
+      {
+        "id": 4,
+        "name": "Montre Connectée",
+        "description": "Montre connectée avec suivi de l'activité et capteur de fréquence cardiaque.",
+        "price": 299.00,
+        "quantity": 30,
+        "image": "https://img.freepik.com/premium-vector/realistic-vector-mockup-phone-visual-ui-app-demonstration_88272-10459.jpg?semt=ais_hybrid"
+      },
+      {
+        "id": 5,
+        "name": "Enceinte Portable",
+        "description": "Enceinte Bluetooth résistante à l'eau avec 10 heures d'autonomie.",
+        "price": 99.90,
+        "quantity": 50,
+        "image": "https://img.freepik.com/premium-vector/realistic-vector-mockup-phone-visual-ui-app-demonstration_88272-10459.jpg?semt=ais_hybrid"
+      }
+    ]
+  }
+  
