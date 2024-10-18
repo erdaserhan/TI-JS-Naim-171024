@@ -195,8 +195,18 @@ header nav ul li a:hover {
     outline: none;
 }
 
+#cart-items-total {
+    margin-bottom: 9px;
+}
 
-@media screen and (min-width: 100px) and (max-width: 1024px){ 
+#returnHome {
+    color: white;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+
+@media screen and (max-width: 1024px){ 
     #respo {
         display: flex;
         flex-direction: column;
@@ -205,8 +215,4 @@ header nav ul li a:hover {
     #cart {
         width: 90vw;
     }
-}
-
-#cart-items-total {
-    margin-bottom: 9px;
 }
