@@ -85,3 +85,4 @@ function updateCartDisplay() {
         cartElement.appendChild(li);        
     });
 }
+
