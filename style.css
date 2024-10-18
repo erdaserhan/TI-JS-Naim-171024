@@ -187,3 +187,14 @@ header nav ul li a:hover {
     outline: none;
 }
 
+
+@media screen and (min-width: 100px) and (max-width: 1024px){ 
+    #respo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #cart {
+        width: 90vw;
+    }
+}

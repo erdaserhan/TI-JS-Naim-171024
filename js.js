@@ -15,10 +15,13 @@ fetch('products.json')
                 <button onclick="addToCart('${product.name}', ${product.price})"">Add to Cart</button>
             </div>
         `
-        findDiv.appendChild(newElement)
+            findDiv.appendChild(newElement)
     }    
 })
 
+
+const getItemsLocalStorage = localStorage.getItem("quantity");
+const localItems = JSON.parse(getItemsLocalStorage)
 
 let Items = [];
 
@@ -48,7 +51,6 @@ function deleteFromCart(index) {
 function updateQuantity(index, quantity) {
     Items[index].quantity = quantity;
     updateCartDisplay();
-    localStorage.setItem("quantity", JSON.stringify(Items));
 }
 
 function checkout() {
