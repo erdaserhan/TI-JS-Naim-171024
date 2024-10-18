@@ -7,8 +7,8 @@ fetch('products.json')
         newElement.innerHTML = `
             <div class="product">
                 <img src="${product.image}">
-                <h3>${product.name}</h3>
-                <h4>${product.description}<h4>
+                <h3>${product.name}</h3><hr>
+                <h4>${product.description}<h4><hr>
                 <p>Price : €${product.price}</p>
                 <p>Quantity : ${product.quantity}</p>
                 <button onclick="window.location.href='productDetails.html?id=${product.id}'">Product Detail</button>
@@ -17,13 +17,38 @@ fetch('products.json')
         `
             findDiv.appendChild(newElement)
     }    
-})
+});
 
 
-const getItemsLocalStorage = localStorage.getItem("quantity");
-const localItems = JSON.parse(getItemsLocalStorage)
-
+const localItems = JSON.parse(localStorage.getItem("quantity"));
 let Items = [];
+
+
+
+/*
+const cartElement = document.getElementById('cart-items');
+    const cartElementTotal = document.getElementById('cart-items-total');
+    cartElement.innerHTML = '';
+    localItems.forEach((key, index) => {
+        const li = document.createElement('li');
+        li.className = 'cart-item';
+        li.innerHTML = `
+            <span>${key.name} - €${(key.price*key.quantity).toFixed(2)}
+            <div class="quantity">
+                <button onclick="updateQuantity(${index},${key.quantity - 1})">-</button>
+                <input type="number" value="${key.quantity}" min="0" max="10" onchange="updateQuantity(${index}, this.value)">
+                <button onclick="updateQuantity(${index}, ${key.quantity + 1})">+</button>
+            </div>
+            </span>
+            <button onclick="deleteFromCart(${index})">Delete</button>
+        `;
+        let totalPrice = 0;
+        Items.forEach(item => {
+        totalPrice += item.price * item.quantity;
+        cartElementTotal.innerHTML = `<strong>Total<strong> : €${totalPrice.toFixed(2)}`
+    });
+        cartElement.appendChild(li);        
+});*/
 
 
 function addToCart(name, price) {
@@ -40,18 +65,18 @@ function addToCart(name, price) {
     }
     updateCartDisplay();
     localStorage.setItem("quantity", JSON.stringify(Items));
-}
+};
 
 
 function deleteFromCart(index) {
     Items.splice(index, 1);
     updateCartDisplay();
-}
+};
 
 function updateQuantity(index, quantity) {
     Items[index].quantity = quantity;
     updateCartDisplay();
-}
+};
 
 function checkout() {
     let totalPrice = 0;
@@ -59,7 +84,7 @@ function checkout() {
         totalPrice += item.price * item.quantity;
     });
    // window.location.pathname = "/form.html";
-}
+};
 
 
 function updateCartDisplay() {
@@ -82,9 +107,9 @@ function updateCartDisplay() {
         let totalPrice = 0;
         Items.forEach(item => {
         totalPrice += item.price * item.quantity;
-        cartElementTotal.innerHTML = `<strong>Total<strong> : €${totalPrice.toFixed(2)}`
+        cartElementTotal.innerHTML = `<strong>Total Price<strong> : €${totalPrice.toFixed(2)}`
     });
         cartElement.appendChild(li);        
     });
-}
+};
 
